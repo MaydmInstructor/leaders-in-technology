@@ -1,3 +1,10 @@
 @import url("../common.css");
 
-/* ======= ABOUT US STYLE SHEET======= */
+/* ======= ABOUT US STYLE SHEET=== */
+p {
+  font-size:13pt;
+font-family: 'Press Start 2P', cursive;
+color:#007FFF;
+
+
+}
