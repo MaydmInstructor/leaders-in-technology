@@ -11,6 +11,9 @@
  * production code, beware of the browser
  * prefixes.
  */
+ h1
+ {  font-family: Courier;
+ }
 
 body
 {
@@ -20,6 +23,15 @@ body
   /* make it look decent enough */
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+#logo
+{
+  height: 300px;
+  width: auto;
+  display: block;
+  margin: auto;
+  border-radius: 200px 200px 200px 200px;
 }
 
 a
