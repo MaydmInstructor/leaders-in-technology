@@ -20,25 +20,120 @@
        margin:0 auto;
        z-index:10;
       text-align:center
-   }
-   img {
-     border-radius:50%;
-     width:130px;
-     @include breakpoint(papa-bear) {
-       width:80px;
-     }
-     @include breakpoint(mama-bear) {
-       width:120px;
-       height:120px;
-     }
-   }
-   @include breakpoint(papa-bear) {
-     width:150px;
-     height:150px;
-   }
-   @include breakpoint(mama-bear) {
-     width:200px;
-     height:200px;
-   }
-    @include breakpoint(baby-bear) { width:180px;height:180px; }
+
+}
+/* generic css */
+
+
+
+.sign-image .mask,
+.sign-image .content {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+}
+
+.sign-image img {
+  display: block;
+  position: relative
+}
+
+.sign-image h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  font-family: Raleway, serif;
+  padding: 10px;
+  /*background: rgba(0, 0, 0, 0.8);*/
+  margin: 20px 0 0 0
+}
+
+.sign-image p {
+  font-family: Merriweather, serif;
+  font-style: italic;
+  font-size: 14px;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center
+}
+
+.sign-image a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #000;
+  color: #fff;
+  font-family: Raleway, serif;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+
+.sign-image a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+
+
+/*1*/
+
+.view-first img {
+  /*1*/
+  transition: all 0.2s linear;
+  width: 300px;
+  height: 200px;
+}
+
+.view-first .mask {
+  opacity: 0;
+  background-color: rgba(58, 1, 132, 0.44);
+  transition: all 0.4s ease-in-out;
+}
+
+.view-first h2 {
+  transform: translateY(-100px);
+  opacity: 0;
+  font-family: Raleway, serif;
+  transition: all 0.2s ease-in-out;
+}
+
+.view-first p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.view-first a.info {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+
+/* */
+
+.view-first:hover img {
+  transform: scale(1.1);
+}
+
+.view-first:hover .mask {
+  opacity: 1;
+}
+
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.view-first:hover p {
+  transition-delay: 0.1s;
+}
+
+.view-first:hover a.info {
+  transition-delay: 0.2s;
 }
