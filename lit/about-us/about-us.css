@@ -1,23 +1,35 @@
 @import url("../common.css");
 /* ======= ABOUT US STYLE SHEET=== */
-p {
-  font-size:13pt;
-font-family: 'Press Start 2P', cursive;
-color:#007FFF;
+p, h2{
+  font-size:30pt;
+font-family: 'Crushed'
+  color:#72DDF7;
 }
 
-
-
-.pic-name {
-    text-align: justify;
-    width: 200px;
+.quote{
+  text-align:left;
+  color:#E980FC;
 }
 
-.pic-name img {
-    display: block;
-    margin: 0 auto;
-    height: 200px;
+.profile h2 {
+    text-align: left;
     width: 200px;
+    margin-left: 5em;
+    color:#72DDF7;
+}
+
+.profile img {
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: auto 2em 5em 2em;
+}
+
+.profile p {
+  text-align:left;
+  font-size: 20pt;
+  margin: 1em;
+  color: #3993DD;
 }
 
 .group-pics {
